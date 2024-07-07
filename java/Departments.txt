@@ -1,0 +1,13 @@
+Tactical Department
+Medical
+Artillery
+Motorized Infantry
+Tanks
+Airforce
+Navy
+Engineering
+Navigation
+Gunner
+Artillery
+Shields
+Fighter

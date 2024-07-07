@@ -1,0 +1,35 @@
+OUTDATED!!!!!!! Needs update
+
+In order to deploy the java-Code download ojbdc11.jar from this website: "https://download.oracle.com/otn-pub/otn_software/jdbc/218/ojdbc11.jar" (direct downloadlink)
+If that doesn't work, try it from this link: "https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html".
+Next download Intellij from the official Website and install it (students of the University of Vienna get the ultimate edition for free).
+Then create a new java Project, got to File/Project Structure, choose Modules in the newly opened window, click the right plus-button, choose jars or directories, 
+choose your downloaded ojbdc11.jar-file from your filesystem, click ok and/or apply adn close the window.
+To create your tables, click on the Database button on the top right of the Intellij-window, click on the plus-button of the window, hover over Data Source 
+and choose oracle on the popup menu. 
+
+Enter the following connection-string (under URL) into the new window: "jdbc:oracle:thin:@domain:1521:orclcdb" 
+(if you use a different oracle database use a different connection-string)
+
+Enter your database-username and password, click on Test Connection and press apply and/or ok on success. If the test fails check your details and if you try to access 
+the university-database outside the university network, check if you are connected with the BIG-IP Edge Client.
+
+Then take all the files in the java folder and the sql-files and copy or transfer them into the src-folder of your Intellij-Project. Open the "create.sql" file,
+select the dropdown menu of "<session>" and select your database > new session, execute all sql-queries by going into line 0, character 0, press the left play-button and 
+choose the option that selects all queries and click it. Click the checkmark to commit the changes, go into the Main.java file and press the top right playbutton.
+After the programm terminates, your java-code should be deployed
+
+
+In order to deploy the php-Code, upload all the php-files to Almighty and put them in your account-folder in the directory "public_html". 
+If the directory doesn't exist, create it. 
+If you go to the website: "http://domain/~Youraccount/" 
+you will be able to see that the website works, if you created and populated your database beforehand.
+
+
+Inf you follow the instructions above successfully, the application will be deployed fully.
+
+To LogIn for the first time use:
+username: "admin1"
+password: "1234"
+
+It is recommended to delete this profile as soon as possible, after creating an account with a more secure password.

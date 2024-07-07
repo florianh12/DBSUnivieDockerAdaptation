@@ -1,0 +1,79 @@
+body {
+	max-width: 90vw;
+}
+#logopanvic {
+	width: 400px;
+	height: auto;
+	float: right;
+	top: 40%;
+}
+
+.t {
+	display: inline-block;
+	margin-left: 47px;
+}
+
+.collapable {
+	background-color: #091491;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 16px;
+  }
+  .collapable::after {
+	content: '\002B';/*"\2212"*/
+	float: right;
+	font-size: 16px;
+  }
+  .collapable.activated::after {
+	content: "\2212";
+	
+  }
+ .activated, .collapable:hover {
+	background-color: #000981;
+}
+.colcontent {
+	padding: 18px;
+	display: block;
+	overflow: hidden;
+	background-color: #b0aae61e;
+	/*color:rgb(255, 255, 255);*/
+  }
+.colcontains {
+	/*color:rgb(255, 255, 255);*/
+	background-color: #e7e7e7;
+}
+.colcontainsb {
+	color:rgb(255, 255, 255);
+	background-color: #000981;
+}
+.colcontainsb:hover {
+	background-color: #0613cc;
+}
+.b-img {
+	position: absolute;
+	top: 200;
+	left: -40;
+	width: 100%;
+	height: 160%;
+	background-image: url('Logo_Galactic_union.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow-y: hidden;
+	opacity: 0.3;
+  }
+
+  .websitecontent {
+	position: relative;
+	margin-left:5%; 
+	margin-right:-5%; 
+	margin-bottom:-1%;
+	z-index: 1;
+  }
+.table-striped tr {
+	background-color: transparent !important;
+}
