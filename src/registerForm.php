@@ -123,10 +123,10 @@ if(isset($_COOKIE['username']) && isset($_COOKIE['password']) && password_verify
               <button style="margin-right: 20px; color: white; background-color:darkgreen" type="submit" >
                   Register
               </button>
-
+              
           </div>
           <div class="col">
-              <input style="color: white; background-color:grey" type="button" name="cancelbutton" value="Go back &#9166;" onClick="window.location.href='https://wwwlab.cs.univie.ac.at/~hejzef44/index.php';">
+              <input style="color: white; background-color:grey" type="button" name="cancelbutton" value="Go back &#9166;" onClick="window.location.href='/';">
           </div>
         </div>
       </form>
