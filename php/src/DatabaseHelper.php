@@ -512,7 +512,11 @@ class DatabaseHelper
         oci_fetch_all($statement, $res, null, null, OCI_FETCHSTATEMENT_BY_ROW);
 
         oci_free_statement($statement);
-        return $res[0]['PWD'];
+        if(isset($res[0]['PWD'])) {
+            return $res[0]['PWD'];
+        } else {
+            return -1;
+        }
     }
 
     public function deleteAdministrator($username)

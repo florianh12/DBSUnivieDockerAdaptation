@@ -1,7 +1,8 @@
 <?php
   if(isset($_COOKIE["unauthorized"])) {
-    echo "<script>alert(\"Unauthorized access! \\nThis incident will be reported!\");</script>";
     setcookie("unauthorized", "", time() - 3600);
+    echo "<script>alert(\"Unauthorized access! \\nThis incident will be reported!\");</script>";
+    
 
   }
 ?>

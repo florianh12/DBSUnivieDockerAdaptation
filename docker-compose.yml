@@ -8,31 +8,33 @@ services:
       - APP_USER=test
       - APP_USER_PASSWORD=1234
     ports:
-      - 1521:1521
+      - "1521:1521"
     volumes:
       - oracle-data:/opt/oracle/oradata
       - oracle-backup:/opt/oracle/backup
       - ./setup:/opt/oracle/scripts/startup
-    # healthcheck:
-    #   test: ["CMD", "sqlplus", "-L", "sys/Oracle_123@//localhost:1521/ORCLCDB as sysdba", "@healthcheck.sql"]
-    #   interval: 30s
-    #   timeout: 10s
-    #   retries: 5
+    networks:
+      - oracle-php
   
   php:
     build: ./php
     container_name: php-app
     environment:
       - PHP_MEMORY_LIMIT=512M
-    volumes:
-      - ./src:/var/www/html
     ports:
       - "8080:80"
+    volumes:
+      - ./php/src:/var/www/html
     depends_on:
       - oracle-db
+    networks:
+      - oracle-php
 
 
 
 volumes:
   oracle-data:
   oracle-backup:
+
+networks:
+  oracle-php:

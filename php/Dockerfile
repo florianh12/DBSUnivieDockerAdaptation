@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
 # Copy Oracle Instant Client files from local directory
 COPY instantclient-basiclite-linux.x64-23.4.0.24.05.zip /opt/oracle/
 COPY instantclient-sdk-linux.x64-23.4.0.24.05.zip /opt/oracle/
+# COPY src/ /var/www/html/
 
 # Install Oracle Instant Client
 RUN cd /opt/oracle \
@@ -35,6 +36,3 @@ RUN a2enmod rewrite
 
 # Set the working directory
 WORKDIR /var/www/html
-
-# Copy the application code to the container
-COPY . /var/www/html
