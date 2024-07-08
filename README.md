@@ -7,7 +7,7 @@ This is the administrative Website of the Panvican Union, for Unionemployees. On
 In order to start the database, go into the project's main directory and command docker to compose up your project.<br>(This project was developed on Linux, you might have to change some filepaths in order for it to work on Windows.)
 
 In order to deploy the java-Code download ojbdc11.jar from this website: "https://download.oracle.com/otn-pub/otn_software/jdbc/218/ojdbc11.jar" (direct download-link) <br>
-If that doesn't work, try it from this link: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html".
+If that doesn't work, try it from this link: "https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html".
 <br>
 Next download Intellij from the official Website and install it (direct database Connections only with Intellij Ultimate [free for university students]).
 <br>
