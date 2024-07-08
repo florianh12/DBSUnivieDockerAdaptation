@@ -12,7 +12,7 @@ services:
     volumes:
       - oracle-data:/opt/oracle/oradata
       - oracle-backup:/opt/oracle/backup
-      - ./setup:/opt/oracle/scripts/startup
+      - ./sql/setup:/opt/oracle/scripts/startup
     networks:
       - oracle-php
   
