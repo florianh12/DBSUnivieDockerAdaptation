@@ -23,10 +23,9 @@ public class Main {
     private static ArrayList<String> surnames = new ArrayList<>(), firstNames = new ArrayList<>(), planets = new ArrayList<>(), streets = new ArrayList<>(), cities = new ArrayList<>(), deparmy = new ArrayList<>(), depspace = new ArrayList<>(), titles = new ArrayList<>(), parties = new ArrayList<>(), pjobs = new ArrayList<>(), stype = new ArrayList<>(), lawareas = new ArrayList<>(), lawtexts = new ArrayList<>();
     private static ArrayList<Integer> soldierIDs = new ArrayList<>();
     private static Set<Integer> ZIPlist = new HashSet<>(), socialseclist = new HashSet<>(), telephonelist = new HashSet<>();
-    //TODO: update database connection String
-    private static final String database = "jdbc:oracle:thin:@domain:1521:orclcdb";
-    private static final String user = "WorkInProgress";
-    private static final String pass = "myPassword";
+    private static final String database = "jdbc:oracle:thin:@localhost:1521:FREE";
+    private static final String user = "GALACTICUNIONDBUSER";
+    private static final String pass = "securepassword";
 
     private static Connection con;
     private static PreparedStatement ZIPcode, employee, soldier, justice, politician, court, senate, rule, mission, carryout, law, currUID, currCID, currSenID, currMID, existingZIPcodes, existingSocialSec, existingtelephone, admin, curradminct;

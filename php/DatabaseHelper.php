@@ -2,9 +2,9 @@
 class DatabaseHelper
 {
 
-    const username = 'WorkInProgress'; 
-    const password = 'yourpassword'; 
-    const con_string = '//domain:1521/orclcdb';
+    const username = 'GALACTICUNIONDBUSER'; 
+    const password = 'securepassword'; 
+    const con_string = '//domain:1521/FREE';
 
     
     protected $conn;
