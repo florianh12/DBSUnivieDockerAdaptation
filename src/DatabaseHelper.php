@@ -4,7 +4,7 @@ class DatabaseHelper
 
     const username = 'GALACTICUNIONDBUSER'; 
     const password = 'securepassword'; 
-    const con_string = '//domain:1521/FREE';
+    const con_string = '//oracle-db:1521/FREE';
 
     
     protected $conn;
