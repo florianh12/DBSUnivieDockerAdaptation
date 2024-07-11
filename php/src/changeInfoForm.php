@@ -475,7 +475,7 @@ $soldier_array = $database->selectallSoldiers();
 
                     </div>
                     <div class="col">
-                        <input style="color: white; background-color:darkred" type="button" name="cancelbutton" value="Cancel" onClick="window.location.href='http://wwwlab.cs.univie.ac.at/~hejzef44/details.php?Details=<?php print $selected;?>';">
+                        <input style="color: white; background-color:darkred" type="button" name="cancelbutton" value="Cancel" onClick="window.location.href='/details.php?Details=<?php print $selected;?>';">
                     </div>
                 </div>
             </form>
